@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(to right, #f0f0f0, #ccc, #a2b6cc); /* Gradient background */
+            text-align: center;
+            font-family: 'Segoe Script', cursive; /* Placeholder decorative font */
+            margin: 0; /* Remove default body margin */
+        }
+
+        #frame {
+            position: relative;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 20px auto;
+            max-width: 400px;
+            background-color: #fff; /* White frame background */
+            display: inline-block;
+        }
+
+        #flowers {
+            font-size: 14px;
+            color: #555;
+        }
+
+        h2, p {
+            font-size: 18px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        #frame p {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .decorative-line {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: #555;
+        }
+
+        .decorative-line.left {
+            left: 10px;
+        }
+
+        .decorative-line.right {
+            right: 10px;
+        }
+
+        .flower-image {
+            max-width: 150px; /* Three times as large */
+            filter: grayscale(100%);
+            background: none; /* Remove white background */
+        }
+
+        #flower-left {
+            position: absolute;
+            top: 50%;
+            left: -90px; /* Adjusted for larger size */
+            transform: translateY(-50%);
+        }
+
+        #flower-right {
+            position: absolute;
+            top: 50%;
+            right: -90px; /* Adjusted for larger size */
+            transform: translateY(-50%);
+        }
+    </style>
+    <title>Walter White's Obituary</title>
+</head>
+<body>
+
+    <div id="frame">
+        <div class="decorative-line left"></div>
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Walter_White_S5B.png" alt="Walter White" style="max-width: 100%; filter: grayscale(100%);">
+        <div class="decorative-line right"></div>
+        <img id="flower-left" class="flower-image" src="https://img.freepik.com/free-vector/hand-drawn-flat-design-simple-flower-outline_23-2149380501.jpg?size=338&ext=jpg&ga=GA1.1.1448711260.1706313600&semt=ais" alt="Flower" />
+        <img id="flower-right" class="flower-image" src="https://img.freepik.com/free-vector/hand-drawn-flat-design-simple-flower-outline_23-2149380501.jpg?size=338&ext=jpg&ga=GA1.1.1448711260.1706313600&semt=ais" alt="Flower" />
+        <p style="font-size: 24px; font-weight: bold;">Walter White</p>
+    </div>
+
+    <div>
+        <h2>Obituary</h2>
+        <p style="font-size: 20px;">A loving father and a great chemist, Walter White, passed away peacefully. He dedicated his life to his family and the pursuit of knowledge in the field of chemistry.</p>
+    </div>
+
+    <div id="flowers">
+        <p>The funeral is scheduled for January 30, 2024.</p>
+    </div>
+
+</body>
+</html>
